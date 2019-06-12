@@ -12,9 +12,10 @@ namespace GradeBookTestProject
         {
             //arrange
            var book = new Book("");
-            book.AddGrade(22.55);
-            book.AddGrade(32.67);
-            book.AddGrade(42.54);
+            book.AddGrade(82.55);
+            book.AddGrade(92.67);
+            book.AddGrade(82.54);
+            book.AddGrade(85.0);
 
 
 
@@ -24,9 +25,7 @@ namespace GradeBookTestProject
 
 
             //assert
-            Assert.Equal(32.6 , result.Average , 1);
-            Assert.Equal(42.54, result.High);
-            Assert.Equal(22.55, result.Low);
+            Assert.Equal('B', result.Letter);
         }
     }
 }
