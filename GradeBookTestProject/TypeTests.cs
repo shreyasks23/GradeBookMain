@@ -52,9 +52,9 @@ namespace GradeBookTestProject
             
         }
 
-        public Book GetBook(string name)
+        public InMemoryBook GetBook(string name)
         {
-            return new Book(name);
+            return new InMemoryBook(name);
         }
     }
 }

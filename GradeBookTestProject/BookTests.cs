@@ -11,7 +11,7 @@ namespace GradeBookTestProject
         public void BookCalculatesGrades()
         {
             //arrange
-           var book = new Book("");
+           var book = new InMemoryBook("");
             book.AddGrade(82.55);
             book.AddGrade(92.67);
             book.AddGrade(82.54);
@@ -25,7 +25,7 @@ namespace GradeBookTestProject
 
 
             //assert
-            Assert.Equal('B', result.Letter);
+            Assert.Equal('B', result.ltr);
         }
     }
 }
